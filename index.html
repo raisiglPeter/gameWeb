@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/style.css" />
-
     <script
       src="https://kit.fontawesome.com/ee8cc52b8a.js"
       crossorigin="anonymous"
@@ -27,7 +26,7 @@
           <li><a href="about.html">about</a></li>
         </ul>
         <!-- sign in  -->
-        <button type="button">sign in</button>
+        <button type="button" class="shop-button">sign in</button>
       </nav>
 
       <section id="showcase">
@@ -48,44 +47,32 @@
           </a>
         </div> -->
 
-        <div class="container">
+        <section class="container">
           <div class="carousel">
-            <div class="slider">
-              <div class="article" data-index="0" data-status="active">
+            <button class="carousel-button prev">
+              <i class="fa-solid fa-arrow-right fa-rotate-180"></i>
+            </button>
+            <button class="carousel-button next">
+              <i class="fa-solid fa-arrow-left fa-rotate-180"></i>
+            </button>
+            <ul>
+              <li class="slide" data-index="0" data-active>
                 <h1>
                   Bad
                   <span class="emphasis">Frame</span>
                   Games
                 </h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Reiciendis vel maxime eveniet tempore omnis mollitia quod
-                  asperiores consequatur molestiae quaerat atque quis nesciunt
-                  fuga fugit ratione veniam suscipit, iure non!
-                </p>
                 <a href="./store.html">
-                  <button style="min-width: 150px">SHOP</button>
+                  <button class="shop-button" style="min-width: 150px">
+                    SHOP
+                  </button>
                 </a>
-              </div>
-              <div class="article" data-index="1" data-status="inactive">
-                Content 2
-              </div>
-              <div class="article" data-index="2" data-status="inactive">
-                Content 3
-              </div>
-              <div class="article" data-index="3" data-status="inactive">
-                Content 4
-              </div>
-              <div class="article" data-index="4" data-status="inactive">
-                Content 5
-              </div>
-            </div>
-            <div class="controls">
-              <span class="arrow left" onclick="leftClick()">left</span>
-              <span class="arrow right" onclick="rightClick()">right</span>
-            </div>
+              </li>
+              <li class="slide" data-index="1"></li>
+              <li class="slide" data-index="2"></li>
+            </ul>
           </div>
-        </div>
+        </section>
       </section>
     </header>
     <main>

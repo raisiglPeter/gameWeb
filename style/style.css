@@ -6,8 +6,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-size: 62.5%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  transition: all 0.3s ease 0s;
+  transition: all 0.1s ease 0s;
 }
 .emphasis {
   color: rgba(107, 95, 230, 1);
@@ -15,7 +16,7 @@
 li,
 a {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 2rem;
   color: white;
   text-decoration: none;
 }
@@ -31,29 +32,39 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
+  padding: 3rem 10%;
   background-color: rgba(0, 0, 0, 0.3);
 }
-button {
+/* button {
   color: white;
   font-weight: 500;
   font-size: 15px;
-  padding: 9px 25px;
+  padding: 0.9rem 2rem;
   background-color: rgba(107, 95, 230, 1);
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  transition: all 0.3s ease 0s;
   margin: 0.5rem;
-}
+} */
 button:hover {
   background-color: white;
   color: rgba(107, 95, 230, 1);
 }
+.shop-button {
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 0.9rem 2rem;
+  background-color: rgba(107, 95, 230, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 0.5rem;
+}
 .logo {
   max-width: 100px;
   cursor: pointer;
-  font-size: 3rem;
+  font-size: 5rem;
   margin: 0.5rem;
 }
 .logo:hover {
@@ -76,13 +87,10 @@ button:hover {
 }
 
 #showcase {
-  /* height: 80%;
+  height: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 20px; */
+  padding: 0 20px;
 }
 #showcase h1 {
   font-size: 50px;
@@ -120,62 +128,37 @@ button:hover {
 /* ... */
 /* ... */
 /* this is the carousel section  */
-.container {
-  width: 90%;
-  margin: 10px auto;
-}
 .carousel {
-  border: 2px solid #ccc;
-  height: 600px;
-  margin-top: 2rem;
+  height: 100vh;
 }
-.slider {
+.carousel > ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.slide {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 400%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* opacity: 0;
-  z-index: 0; */
-  transition: all 1s;
+  inset: 0;
+  top: 10rem;
 }
-.slider section {
-  flex-basis: 100%;
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
 }
-.controls .arrow {
+.carousel-button {
   position: absolute;
+  font-size: 5rem;
   top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
   cursor: pointer;
-}
-.arrow.left {
-  left: 10px;
-}
-.arrow.right {
-  right: 10px;
+  border: none;
+  background: none;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-main > div[data-status="inactive"] {
-  transform: translateX(-100%);
-  transition: none;
-}
-main > div[data-status="active"] {
-  transform: translateX(0%);
-}
-
-main > div[data-status="left"] {
-  transform: translateX(-100%);
-}
-main > div[data-status="right"] {
-  transform: translateX(100%);
-}
-main > div[data-status="from-left"] {
-  transform: translateX(-100%);
-  transition: none;
-}
-main > div[data-status="from-right"] {
-  transform: translateX(100%);
-  transition: none;
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
 }
