@@ -117,6 +117,9 @@ button:hover {
 #section-c .box-2 {
   background-color: rgb(179, 175, 230);
 }
+/* ... */
+/* ... */
+/* this is the carousel section  */
 .container {
   width: 90%;
   margin: 10px auto;
@@ -152,4 +155,27 @@ button:hover {
 }
 .arrow.right {
   right: 10px;
+}
+
+main > div[data-status="inactive"] {
+  transform: translateX(-100%);
+  transition: none;
+}
+main > div[data-status="active"] {
+  transform: translateX(0%);
+}
+
+main > div[data-status="left"] {
+  transform: translateX(-100%);
+}
+main > div[data-status="right"] {
+  transform: translateX(100%);
+}
+main > div[data-status="from-left"] {
+  transform: translateX(-100%);
+  transition: none;
+}
+main > div[data-status="from-right"] {
+  transform: translateX(100%);
+  transition: none;
 }

@@ -47,18 +47,42 @@
             <button style="min-width: 150px">SHOP</button>
           </a>
         </div> -->
+
         <div class="container">
           <div class="carousel">
             <div class="slider">
-              <div class="slide">Content 1</div>
-              <div class="slide">Content 2</div>
-              <div class="slide">Content 3</div>
-              <div class="slide">Content 4</div>
-              <div class="slide">Content 5</div>
+              <div class="article" data-index="0" data-status="active">
+                <h1>
+                  Bad
+                  <span class="emphasis">Frame</span>
+                  Games
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Reiciendis vel maxime eveniet tempore omnis mollitia quod
+                  asperiores consequatur molestiae quaerat atque quis nesciunt
+                  fuga fugit ratione veniam suscipit, iure non!
+                </p>
+                <a href="./store.html">
+                  <button style="min-width: 150px">SHOP</button>
+                </a>
+              </div>
+              <div class="article" data-index="1" data-status="inactive">
+                Content 2
+              </div>
+              <div class="article" data-index="2" data-status="inactive">
+                Content 3
+              </div>
+              <div class="article" data-index="3" data-status="inactive">
+                Content 4
+              </div>
+              <div class="article" data-index="4" data-status="inactive">
+                Content 5
+              </div>
             </div>
             <div class="controls">
-              <span class="arrow left">left</span>
-              <span class="arrow right">right</span>
+              <span class="arrow left" onclick="leftClick()">left</span>
+              <span class="arrow right" onclick="rightClick()">right</span>
             </div>
           </div>
         </div>
