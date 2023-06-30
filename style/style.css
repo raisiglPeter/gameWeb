@@ -128,37 +128,3 @@ button:hover {
 /* ... */
 /* ... */
 /* this is the carousel section  */
-.carousel {
-  height: 100vh;
-}
-.carousel > ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.slide {
-  position: absolute;
-  inset: 0;
-  top: 10rem;
-}
-.slide[data-active] {
-  opacity: 1;
-  z-index: 1;
-}
-.carousel-button {
-  position: absolute;
-  font-size: 5rem;
-  top: 50%;
-  z-index: 2;
-  transform: translateY(-50%);
-  cursor: pointer;
-  border: none;
-  background: none;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.carousel-button:hover,
-.carousel-button:focus {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.2);
-}
