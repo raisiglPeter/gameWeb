@@ -8,7 +8,6 @@
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  transition: all 0.1s ease 0s;
 }
 .emphasis {
   color: rgba(107, 95, 230, 1);
@@ -28,13 +27,14 @@ header {
   background-size: cover;
   background-position: center;
 }
-nav {
+.nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 10%;
-  background-color: rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap;
 }
+
 button {
   color: white;
   font-weight: 500;
@@ -88,53 +88,18 @@ button:hover {
 
 #showcase {
   height: 80%;
-  display: flex;
-  flex-direction: column;
-  padding: 0 20px;
+  text-align: center;
+}
+#showcase p {
+  font-size: 2rem;
+  max-width: 50%;
+  margin: 0 auto;
 }
 #showcase h1 {
   font-size: 50px;
   line-height: 1.2;
 }
-#showcase p {
-  font-size: 20px;
-  max-width: 75%;
-}
-#section-a {
-  padding: 20px;
-  background-color: rgba(107, 95, 230, 1);
-  text-align: center;
-}
-#section-b {
-  padding: 20px;
-  background-color: white;
-  color: rgba(107, 95, 230, 1);
-  text-align: center;
-  font-weight: 500;
-}
-#section-c {
-  display: flex;
-}
-#section-c div {
-  padding: 20px;
-}
-#section-c .box-1,
-#section-c .box-3 {
-  background-color: rgba(107, 95, 230, 1);
-}
-#section-c .box-2 {
-  background-color: rgb(179, 175, 230);
-}
-/* ... */
-/* ... */
-/* this is the carousel section  */
-header > article {
-  display: grid;
-  height: 100%;
-}
-.article-slide {
-  height: 100%;
-  width: 100%;
-
-  border: 1px solid grey;
+.emphasis {
+  font-size: 50px;
+  line-height: 1.2;
 }
