@@ -35,7 +35,7 @@ nav {
   padding: 3rem 10%;
   background-color: rgba(0, 0, 0, 0.3);
 }
-/* button {
+button {
   color: white;
   font-weight: 500;
   font-size: 15px;
@@ -45,7 +45,7 @@ nav {
   border-radius: 50px;
   cursor: pointer;
   margin: 0.5rem;
-} */
+}
 button:hover {
   background-color: white;
   color: rgba(107, 95, 230, 1);
