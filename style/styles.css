@@ -18,7 +18,8 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 50px;
+  gap: 3rem;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .nav-links {
   list-style: none;
@@ -48,6 +49,9 @@ a {
   color: white;
   text-decoration: none;
 }
+.nav-links > li:hover {
+  color: rgba(107, 95, 230, 1);
+}
 header {
   color: white;
   height: 100vh;
@@ -64,7 +68,7 @@ button {
   padding: 0.9rem 2rem;
   background-color: rgba(107, 95, 230, 1);
   border: none;
-  border-radius: 50px;
+  border-radius: 5rem;
   cursor: pointer;
   margin: 0.5rem;
 }
@@ -75,12 +79,11 @@ button:hover {
 .shop-button {
   color: white;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 1.5rem;
   padding: 0.9rem 2rem;
   background-color: rgba(107, 95, 230, 1);
   border: none;
   border-radius: 50px;
-  cursor: pointer;
   margin: 0.5rem;
 }
 .logo {
@@ -93,13 +96,12 @@ button:hover {
   transition: all 0.3s ease 0s;
   color: rgba(107, 95, 230, 1);
 }
-
 #showcase {
   height: 80%;
   text-align: center;
 }
 #showcase p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   max-width: 50%;
   margin: 0 auto;
 }
@@ -114,5 +116,9 @@ button:hover {
 @media screen and (min-width: 480px) {
   * {
     color: red;
+  }
+  #showcase {
+    max-width: 75%;
+    margin: 0 auto;
   }
 }
