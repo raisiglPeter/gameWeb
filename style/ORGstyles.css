@@ -113,7 +113,7 @@ button:hover {
   font-size: 50px;
   line-height: 1.2;
 }
-@media screen and (min-width: 480px) {
+/* @media screen and (min-width: 480px) {
   * {
     color: red;
   }
@@ -121,4 +121,4 @@ button:hover {
     max-width: 75%;
     margin: 0 auto;
   }
-}
+} */

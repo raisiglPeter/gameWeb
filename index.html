@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/styles.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
     <script
       src="https://kit.fontawesome.com/ee8cc52b8a.js"
       crossorigin="anonymous"
@@ -13,38 +15,60 @@
   </head>
   <body>
     <header>
-      <!-- nav links -->
-      <nav class="nav">
+      <div class="header-container">
         <!-- logo -->
-        <a href="./index.html" class="nav-item nav-logo">
-          <i class="fa-solid fa-gamepad logo" alt="BadFrame"></i>
-        </a>
-        <ul class="nav-item nav-links">
-          <li><a href="./pages/games.html">games</a></li>
-          <li><a href="./pages/store.html">store</a></li>
-          <li><a href="./pages/contact.html">contact</a></li>
-          <li><a href="./pages/about.html">about</a></li>
-        </ul>
-        <!-- sign in  -->
-        <button type="button" class="shop-button nav-item">sign in</button>
-      </nav>
+        <!-- nav links -->
+        <nav class="header-nav">
+          <div class="header-left">
+            <img src="./img/LOGOpng.png" class="nav-logo" />
+          </div>
+          <div class="header-right">
+            <ul class="nav-list">
+              <li>
+                <a
+                  class="nav-link"
+                  aria-label="About us"
+                  href="./pages/about.html"
+                  >ABOUT US</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" aria-label="Games" href="./pages/games.html"
+                  >GAMES</a
+                >
+              </li>
+              <li>
+                <a
+                  class="nav-link"
+                  aria-label="Account"
+                  href="./pages/account.html"
+                  >ACCOUNT</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" aria-label="News" href="./pages/news.html"
+                  >NEWS</a
+                >
+              </li>
+            </ul>
+          </div>
 
-      <section id="showcase">
+          <!-- sign in  -->
+          <!-- <button type="button" class="shop-button nav-item">sign in</button> -->
+        </nav>
+      </div>
+
+      <div id="hero">
         <h1>
           Bad
           <span class="emphasis">Frame</span>
           Games
         </h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
-          vel maxime eveniet tempore omnis mollitia quod asperiores consequatur
-          molestiae quaerat atque quis nesciunt fuga fugit ratione veniam
-          suscipit, iure non!
-        </p>
-        <a href="./store.html">
+        <p>WORK, PLAY, GAME.</p>
+        <!-- <a href="./store.html">
           <button style="min-width: 150px" class="shop-button">SHOP</button>
-        </a>
-      </section>
+        </a> -->
+      </div>
     </header>
     <main></main>
     <footer></footer>
