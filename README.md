@@ -9,7 +9,7 @@ TODO: restyle the website using SASS freeCodeCamp tutorial
         - navbar
             - navbar-left = logo
             - navbar-right = hamburger and links
-            <!-- note that in mobile left and right should be reversed, probably using flexbox -->
+                - note that in mobile left and right should be reversed, probably using flexbox
     - main
         - articles etc.
         - news
