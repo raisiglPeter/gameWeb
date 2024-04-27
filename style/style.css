@@ -1,77 +1,88 @@
 :root {
-    --black: hsl(0, 0%, 8%);
-    --purple: hsl(274, 53%, 37%);
+  --black: hsl(0, 0%, 8%);
+  --purple: hsl(274, 53%, 37%);
 }
 
-*, *::before, *::after {
-    box-sizing: border-box;
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
-    font-size: 62.5%;
-    
+  font-size: 62.5%;
 }
 @media screen and (max-width: 599px) {
-    body {
-        font-size: 1.6rem;
-        font-family: Arial, Helvetica, sans-serif;
-        color: white;
-    }
-    header {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
-          url(../img/showcase.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-}
-  /* }
-li {
+  body {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+  header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+      url(../img/showcase.jpg);
+    height: 500px;
+  }
+  li {
     list-style: none;
-}
-a {
+  }
+  a {
     color: white;
     text-decoration: none;
-}
-.header-nav {
-    padding-top: 2rem;
+  }
+  .header-nav {
     display: flex;
-}
-.header-left {
-    flex-grow: 1;
-}
-.header-right {
-    flex-grow: 4;
-    padding-right: 2rem;
-}
-.nav-list {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+  }
+  .hamburger {
     display: flex;
-    justify-content: end;
-    padding: 1rem;
-}
-.nav-link {
-    padding: 2rem;
+    padding: 1rem 2rem;
+    font-size: 4rem;
+  }
+  .header-right {
+    display: none;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-link {
     font-weight: bolder;
-    
-}
-.nav-logo {
-    max-height: 120px;
-    padding-left: 5rem;
-}
-.header-text {
-    top: 40%;
-    margin: 0 auto;
-    text-align: center;
-    font-weight: lighter;
-    font-size: 3rem;
-    line-height: 1;
-}
-.header-text-small {
-    padding-top: 1rem;
-    font-size: 1.5rem;
-}
-.emphasis {
+  }
+  .nav-logo {
+    max-height: 70px;
+  }
+  .header-text-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .emphasis {
     color: var(--purple);
-    font-size: 110%;
     font-weight: bolder;
-} */
+  }
+}
+
+@media (min-width: 600px) {
+  .header-right {
+    display: flex;
+  }
+  .header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 2rem;
+  }
+}
+@media (min-width: 900px) {
+  .hamburger {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1800px) {
+}
