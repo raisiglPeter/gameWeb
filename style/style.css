@@ -19,10 +19,8 @@ body {
   color: white;
 }
 @media screen and (max-width: 599px) {
-  .text-container {
+  .hero-text-container {
     text-align: center;
-    justify-content: center;
-    align-items: center;
   }
   header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
@@ -72,11 +70,16 @@ body {
     margin-top: 1rem;
     font-weight: 600;
   }
-  /* HAMBURGER MENU */
-  .hamburger {
+  /* HAMBURGER MENU ICON */
+  .hamburger-icon {
     display: flex;
-    padding: 1rem 2rem;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem 1.5rem;
     font-size: 4rem;
+    text-shadow: 1px 2px 0px black;
   }
   .hamburger-menu {
     display: flex;
@@ -169,13 +172,47 @@ body {
     padding: 1.5rem 4rem;
     margin: 1rem 0;
   }
+  /* BOTTOM ARTICLE  ******************************************************************/
   .bottom-article {
-    background-color: grey;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url(../img/arcadeBack.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
     width: 100%;
     height: 1080px;
+    position: relative;
+  }
+  .hero-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .positions-heading {
+    padding-top: 15rem;
+    font-size: 4rem;
+    line-height: 1.5;
+  }
+  .positions-text {
+    padding: 2rem 0;
+    margin: 0;
   }
   .positions-button {
-    margin-top: 20rem;
+    margin-top: 2rem;
+    background-color: white;
+    color: var(--purple);
+  }
+  .positions-button:hover {
+    background-color: var(--purple);
+    color: white;
+  }
+  .text-shadow {
+    text-shadow: 1px 5px 7px rgba(0, 0, 0, 0.8);
   }
 }
 

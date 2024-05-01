@@ -22,8 +22,8 @@
         </div>
         <!-- nav links -->
         <!-- HAMBURGER: -->
-        <a href="hamburger.html" class="icon" onclick="myFunction()">
-          <i class="fa-solid fa-bars hamburger"> </i>
+        <a class="icon" onclick="myFunction()">
+          <i class="fa-solid fa-bars hamburger-icon"> </i>
         </a>
         <div class="header-right">
           <ul class="nav-list">
@@ -90,9 +90,13 @@
         <button class="button news-button">VIEW ALL NEWS</button>
       </div>
       <div class="bottom-article">
-        <div class="text-container">
-          <h1 class="hero-heading">LOVE WHERE<br />YOU WORK</h1>
-          <p class="header-text-small">WE'VE GOT A PLACE FOR YOU</p>
+        <div class="hero-text-container">
+          <h1 class="header-text-main positions-heading text-shadow">
+            LOVE WHERE<br />YOU WORK
+          </h1>
+          <p class="header-text-small positions-text text-shadow">
+            WE'VE GOT A PLACE FOR YOU
+          </p>
         </div>
 
         <div class="button-container">
@@ -102,4 +106,19 @@
     </main>
     <footer></footer>
   </body>
+  <script>
+    document.getElementById("menu-icon").addEventListener("click", function () {
+      document
+        .querySelector(".hamburger-menu-wrapper")
+        .classList.add("show-menu");
+    });
+
+    document
+      .querySelector(".hamburger-x-button")
+      .addEventListener("click", function () {
+        document
+          .querySelector(".hamburger-menu-wrapper")
+          .classList.remove("show-menu");
+      });
+  </script>
 </html>
