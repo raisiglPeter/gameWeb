@@ -1,4 +1,4 @@
-- structure
+homepage:
 - body
     - header
         - header-image
