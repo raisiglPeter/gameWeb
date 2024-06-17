@@ -1,3 +1,5 @@
+TODO: mobile layout is ok, next:
+- tablet/desktop layouts
 homepage:
 - body
     - header
