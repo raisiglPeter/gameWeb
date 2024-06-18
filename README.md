@@ -1,5 +1,10 @@
-TODO: mobile layout is ok, next:
-- tablet/desktop layouts
+TODO: 
+- mobile layout:
+- - added images into main article, must add text content
+  - - work section gradient needs fixing
+    - - add footer and footer logo
+- tablet layout
+- desktop layouts
 homepage:
 - body
     - header
