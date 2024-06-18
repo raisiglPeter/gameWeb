@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/style-tablet.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
     <script
@@ -79,11 +80,52 @@
     <main class="main-container">
       <div class="main-article">
         <div class="main-article-body">
-          <div class="main-article-item item1"></div>
-          <div class="main-article-item item2"></div>
-          <div class="main-article-item item3"></div>
-          <div class="main-article-item item4"></div>
-          <div class="main-article-item item5"></div>
+          <div class="main-article-item item1">
+            <a href="#" class="main-article-link">
+              <img
+                src="./img/articles/article-1.png"
+                alt="Placeholder article image."
+                class="main-article-image"
+              />
+            </a>
+          </div>
+          <div class="main-article-item item2">
+            <a href="#" class="main-article-link">
+              <img
+                src="./img/articles/article-2.jpg"
+                alt="Placeholder article image."
+                class="main-article-image"
+              />
+            </a>
+          </div>
+          <div class="main-article-item item3">
+            <a href="#" class="main-article-link">
+              <img
+                src="./img/articles/article-3.jpg"
+                alt="Placeholder article image."
+                class="main-article-image"
+              />
+            </a>
+          </div>
+
+          <div class="main-article-item item4">
+            <a href="#" class="main-article-link">
+              <img
+                src="./img/articles/article-4.png"
+                alt="Placeholder article image."
+                class="main-article-image"
+              />
+            </a>
+          </div>
+          <div class="main-article-item item5">
+            <a href="#" class="main-article-link">
+              <img
+                src="./img/articles/article-5.png"
+                alt="Placeholder article image."
+                class="main-article-image"
+              />
+            </a>
+          </div>
         </div>
       </div>
       <div class="button-container">
@@ -106,7 +148,11 @@
     </main>
     <footer class="footer">
       <div class="footer-logo-container">
-        <img src="img/oldLogo/newLogo.png" alt="Logo of Bad Frame Games." />
+        <img
+          class="footer-logo"
+          src="img/oldLogo/newLogo.png"
+          alt="Logo of Bad Frame Games."
+        />
       </div>
       <ul class="footer-nav-list">
         <li class="footer-nav-list-item">ABOUT US</li>
@@ -125,19 +171,5 @@
       </div>
     </footer>
   </body>
-  <script>
-    document.getElementById("menu-icon").addEventListener("click", function () {
-      document
-        .querySelector(".hamburger-menu-wrapper")
-        .classList.add("show-menu");
-    });
-
-    document
-      .querySelector(".hamburger-x-button")
-      .addEventListener("click", function () {
-        document
-          .querySelector(".hamburger-menu-wrapper")
-          .classList.remove("show-menu");
-      });
-  </script>
+  <script></script>
 </html>
