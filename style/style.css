@@ -1,7 +1,7 @@
 :root {
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 8%);
-  --purple: hsl(274, 53%, 37%);
+  --purple: rgb(150, 58, 220);
 }
 *,
 *::before,
@@ -41,8 +41,6 @@ body {
   .header-container {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    /* THIS HEIGHT EQUALS THE WIDTH OF THE VIEWPORT */
     height: 100vw;
   }
   .header-nav {
@@ -115,7 +113,7 @@ body {
     justify-content: center;
   }
   .emphasis {
-    color: var(--purple);
+    color: blueviolet;
     font-weight: bolder;
   }
   .hamburger-page {
