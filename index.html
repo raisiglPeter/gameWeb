@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="./style/style-tablet.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
     <script
@@ -15,153 +14,174 @@
     <title>BadFrame</title>
   </head>
   <body>
-    <header class="header-container">
-      <nav class="header-nav">
+    <header class="header">
+      <nav class="header__nav">
         <!-- logo -->
-        <div class="header-left">
-          <img src="./img/LOGOpng.png" class="header-nav-logo" />
+        <div class="header__left">
+          <img src="./img/LOGOpng.png" class="header__logo" />
         </div>
         <!-- nav links -->
         <!-- HAMBURGER: -->
-        <a class="hamburger-icon" onclick="openHamburger()">
+        <a class="hamburger" onclick="openHamburger()">
           <i class="fa-solid fa-bars"> </i>
         </a>
-        <div class="header-right">
-          <ul class="nav-list">
-            <li>
-              <a
-                class="nav-link"
-                aria-label="About us"
-                href="./pages/about.html"
-                >ABOUT US</a
-              >
-            </li>
-            <li>
-              <a class="nav-link" aria-label="Games" href="./pages/games.html"
-                >GAMES</a
-              >
-            </li>
-            <li>
-              <a
-                class="nav-link"
-                aria-label="Account"
-                href="./pages/account.html"
-                >ACCOUNT</a
-              >
-            </li>
-            <li>
-              <a class="nav-link" aria-label="News" href="./pages/news.html"
-                >NEWS</a
-              >
-            </li>
-          </ul>
-        </div>
+        <ul class="header__right">
+          <li>
+            <a class="nav__link" aria-label="About us" href="./pages/about.html"
+              >ABOUT US</a
+            >
+          </li>
+          <li>
+            <a class="nav__link" aria-label="Games" href="./pages/games.html"
+              >GAMES</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav__link"
+              aria-label="Account"
+              href="./pages/account.html"
+              >ACCOUNT</a
+            >
+          </li>
+          <li>
+            <a class="nav__link" aria-label="News" href="./pages/news.html"
+              >NEWS</a
+            >
+          </li>
+        </ul>
       </nav>
-      <div class="header-text-wrapper">
-        <h1 class="header-text-main">
-          Bad
-          <span class="emphasis">Frame</span><br />
-          Games
+      <div class="header__text-wrapper">
+        <h1 class="header__title">
+          Bad<span class="header__title-accent">Frame</span>
         </h1>
-        <p class="header-text-small">WORK, PLAY, GAME.</p>
+        <span class="header__subtitle">Games</span>
+        <p class="header__tagline">WORK, PLAY, GAME.</p>
       </div>
-      <div class="hamburger-menu-wrapper">
-        <ul class="hamburger-menu">
-          <a href=""><li class="hamburger-list-item">ABOUT US</li></a>
-          <a href=""><li class="hamburger-list-item">GAMES</li></a>
-          <a href=""><li class="hamburger-list-item">ACCOUNT</li></a>
-          <a href=""><li class="hamburger-list-item">NEWS</li></a>
-          <a class="hamburger-list-item" href="index.html"
-            ><li><i class="hamburger-x-button fa-solid fa-x"> </i></li
+      <div class="hamburger-menu">
+        <ul class="hamburger-menu__list">
+          <a href=""><li class="hamburger-menu__item">ABOUT US</li></a>
+          <a href=""><li class="hamburger-menu__item">GAMES</li></a>
+          <a href=""><li class="hamburger-menu__item">ACCOUNT</li></a>
+          <a href=""><li class="hamburger-menu__item">NEWS</li></a>
+          <a class="hamburger-menu__item" href="index.html"
+            ><li><i class="hamburger-menu__close fa-solid fa-x"> </i></li
           ></a>
         </ul>
       </div>
     </header>
-    <main class="main-container">
-      <div class="main-article-body">
-        <div class="main-article-item item1">
-          <a href="#" class="main-article-link">
+    <main class="main">
+      <div class="articles">
+        <div class="article article--big">
+          <a href="#" class="article__link">
+            <div
+              style="background-image: linear-gradient(transparent, #5c248d)"
+              class="article__gradient"
+            ></div>
             <img
               src="./img/articles/article-1.png"
               alt="Placeholder article image."
-              class="main-article-image"
+              class="article__image"
             />
           </a>
+          <div class="article__text">
+            <h2>TENNOCON 2025: WARFRAME</h2>
+          </div>
         </div>
-        <div class="main-article-item item2">
-          <a href="#" class="main-article-link">
+        <div class="article article--medium">
+          <a href="#" class="article__link">
+            <div
+              style="background-image: linear-gradient(transparent, #9b9b9b)"
+              class="article__gradient"
+            ></div>
+
             <img
               src="./img/articles/article-2.jpg"
               alt="Placeholder article image."
-              class="main-article-image"
+              class="article__image"
             />
           </a>
         </div>
-        <div class="main-article-item item3">
-          <a href="#" class="main-article-link">
+        <div class="article article--small">
+          <a href="#" class="article__link">
+            <div
+              style="background-image: linear-gradient(transparent, #599c45)"
+              class="article__gradient"
+            ></div>
+
             <img
               src="./img/articles/article-3.jpg"
               alt="Placeholder article image."
-              class="main-article-image"
+              class="article__image"
             />
           </a>
         </div>
 
-        <div class="main-article-item item4">
-          <a href="#" class="main-article-link">
+        <div class="article">
+          <a href="#" class="article__link">
+            <div
+              style="background-image: linear-gradient(transparent, #9c4545)"
+              class="article__gradient"
+            ></div>
+
             <img
               src="./img/articles/article-4.png"
               alt="Placeholder article image."
-              class="main-article-image"
+              class="article__image"
             />
           </a>
         </div>
-        <div class="main-article-item item5">
-          <a href="#" class="main-article-link">
+        <div class="article">
+          <a href="#" class="article__link">
+            <div
+              style="background-image: linear-gradient(transparent, #9b9b9b)"
+              class="article__gradient"
+            ></div>
+
             <img
               src="./img/articles/article-5.png"
               alt="Placeholder article image."
-              class="main-article-image"
+              class="article__image"
             />
           </a>
         </div>
       </div>
       <div class="button-container">
-        <button class="button news-button">VIEW ALL NEWS</button>
+        <button class="button button--news">VIEW ALL NEWS</button>
       </div>
-      <div class="positions-article">
-        <div class="hero-text-container">
-          <h1 class="header-text-main text-shadow">LOVE WHERE<br />YOU WORK</h1>
-          <p class="header-text-small"text-shadow">
+      <div class="positions">
+        <div class="positions__text-wrapper">
+          <h1 class="positions__title text-shadow">LOVE WHERE YOU WORK</h1>
+          <p class="positions__tagline text-shadow">
             WE'VE GOT A PLACE FOR YOU
           </p>
         </div>
 
         <div class="button-container">
-          <button class="button positions-button">POSITIONS</button>
+          <button class="button button--positions">POSITIONS</button>
         </div>
       </div>
     </main>
     <footer class="footer">
-      <div class="footer-logo-container">
+      <div class="footer__logo-container">
         <!-- <img
-          class="footer-logo"
+          class="footer__logo"
           src="img/oldLogo/newLogo.png"
           alt="Logo of Bad Frame Games."
         /> -->
       </div>
-      <ul class="footer-nav-list">
-        <li class="footer-nav-list-item">ABOUT US</li>
-        <li class="footer-nav-list-item">GAMES</li>
-        <li class="footer-nav-list-item">CAREERS</li>
-        <li class="footer-nav-list-item">NEWS</li>
-        <li class="footer-nav-list-item">CONTACT US</li>
+      <ul class="footer__nav">
+        <li class="footer__nav-item">ABOUT US</li>
+        <li class="footer__nav-item">GAMES</li>
+        <li class="footer__nav-item">CAREERS</li>
+        <li class="footer__nav-item">NEWS</li>
+        <li class="footer__nav-item">CONTACT US</li>
       </ul>
-      <div class="footer-text-container">
-        <p class="footer-text">
+      <div class="footer__text-container">
+        <p class="footer__text">
           &copy; BAD FRAME GAMES Ltd. ALL RIGHTS RESERVED
         </p>
-        <p class="footer-links">
+        <p class="footer__links">
           &copy; BAD FRAME GAMES Ltd. ALL RIGHTS RESERVED
         </p>
       </div>
