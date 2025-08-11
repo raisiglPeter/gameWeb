@@ -7,7 +7,7 @@ This project is a **recreation** of the [digitalextremes.com](https://www.digita
 
 ## 🔗 Live Demo
 
-[**View Live Version**](http://www.linktowebsite.ca/static-web-site)
+[**View Live Version**] - https://raisiglpeter.github.io/gameWeb/ 
 
 ---
 
