@@ -60,4 +60,33 @@
     align-items: center;
     font-size: 4rem;
   }
+  /* FOOTER BLOCK */
+  .footer {
+    border-top: 2px white solid;
+    background-image: linear-gradient(
+        rgba(70, 0, 123, 0.5),
+        rgba(123, 76, 157, 0.9)
+      ),
+      url(../img/storeBack.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .footer__nav {
+    font-size: 2rem;
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .footer__text {
+    font-size: 1.5rem;
+  }
 }
