@@ -1,0 +1,63 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 8%);
+  --purple: rgb(150, 58, 220);
+  --light-purple: rgb(187, 107, 249);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@media (min-width: 800px) {
+  /* TODO: FIX DESKTOP FONT SIZES FOR HERO SECTION */
+  .header__title {
+    font-size: 6vw;
+  }
+  .header__tagline {
+    font-size: 2vw;
+  }
+  .header__subtitle {
+    font-size: 7.5vw;
+  }
+  .hamburger {
+    display: none;
+  }
+  .header {
+    height: 50vw;
+  }
+  .header__nav {
+    flex-direction: row;
+  }
+  .header__left {
+    padding-top: 1rem;
+  }
+  .header__logo {
+    max-height: 125px;
+    margin-left: 5rem;
+  }
+  .header__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 65%;
+    gap: 6rem;
+    padding-right: 6rem;
+  }
+  .articles {
+    margin-top: -4.4rem;
+  }
+  .nav__link {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  .positions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+  }
+}
