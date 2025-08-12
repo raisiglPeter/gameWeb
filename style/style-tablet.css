@@ -22,7 +22,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    min-height: 750px;
+    min-height: 550px;
   }
   .article {
     height: 100%;

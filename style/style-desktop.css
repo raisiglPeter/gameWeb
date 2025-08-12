@@ -14,13 +14,13 @@
 @media (min-width: 800px) {
   /* TODO: FIX DESKTOP FONT SIZES FOR HERO SECTION */
   .header__title {
-    font-size: 6vw;
+    font-size: 5vw;
   }
   .header__tagline {
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
   .header__subtitle {
-    font-size: 7.5vw;
+    font-size: 6vw;
   }
   .hamburger {
     display: none;
@@ -48,6 +48,7 @@
   }
   .articles {
     margin-top: -4.4rem;
+    min-height: 750px;
   }
   .nav__link {
     font-size: 1.8rem;
@@ -59,6 +60,12 @@
     justify-content: center;
     align-items: center;
     font-size: 4rem;
+  }
+  .positions__title {
+    font-size: 4rem;
+  }
+  .positions__tagline {
+    font-size: 2rem;
   }
   /* FOOTER BLOCK */
   .footer {
