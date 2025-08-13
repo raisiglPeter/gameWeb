@@ -18,6 +18,9 @@
   .header__left {
     margin-right: 20px;
   }
+  .hamburger-menu__item > a {
+    font-size: 3rem;
+  }
   .articles {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

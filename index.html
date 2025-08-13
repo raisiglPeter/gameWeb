@@ -21,11 +21,11 @@
       <nav class="header__nav">
         <!-- logo -->
         <div class="header__left">
-          <img src="./img/LOGOpng.png" class="header__logo" />
+          <img src="./img/LOGO.png" class="header__logo" />
         </div>
         <!-- nav links -->
         <!-- HAMBURGER: -->
-        <a class="hamburger" onclick="openHamburger()">
+        <a class="hamburger">
           <i class="fa-solid fa-bars"> </i>
         </a>
         <ul class="header__right">
@@ -61,15 +61,17 @@
         <span class="header__subtitle">Games</span>
         <p class="header__tagline">WORK, PLAY, GAME.</p>
       </div>
-      <div class="hamburger-menu">
+      <div id="hamburger-menu" class="hamburger-menu">
         <ul class="hamburger-menu__list">
-          <a href=""><li class="hamburger-menu__item">ABOUT US</li></a>
-          <a href=""><li class="hamburger-menu__item">GAMES</li></a>
-          <a href=""><li class="hamburger-menu__item">ACCOUNT</li></a>
-          <a href=""><li class="hamburger-menu__item">NEWS</li></a>
-          <a class="hamburger-menu__item" href="index.html"
-            ><li><i class="hamburger-menu__close fa-solid fa-x"> </i></li
-          ></a>
+          <li class="hamburger-menu__item"><a href="">ABOUT US</a></li>
+          <li class="hamburger-menu__item"><a href="">GAMES</a></li>
+          <li class="hamburger-menu__item"><a href="">ACCOUNT</a></li>
+          <li class="hamburger-menu__item"><a href="">NEWS</a></li>
+          <li class="hamburger-menu__item">
+            <div class="hamburger-menu__close">
+              <i class="fa-solid fa-x"></i>
+            </div>
+          </li>
         </ul>
       </div>
     </header>
@@ -142,7 +144,7 @@
             ></div>
 
             <img
-              src="./img/articles/article-5.png"
+              src="./img/articles/article-5-lores.png"
               alt="Placeholder article image."
               class="article__image"
             />
